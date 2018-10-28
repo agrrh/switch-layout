@@ -7,13 +7,13 @@ from pynput import keyboard
 SWITCH_SHORTCUTS = [
     # For some reason Alt pressed after Shift gets registered as a different
     # key code on my system.
-    # {keyboard.KeyCode(65511)},  # Shift + Alt
-    # {keyboard.Key.alt, keyboard.Key.shift},  # Alt + Shift
+    {keyboard.KeyCode(65511)},  # Shift + Alt
+    {keyboard.Key.alt, keyboard.Key.shift},  # Alt + Shift
 
     # Examples
     # {keyboard.Key.shift, keyboard.Key.ctrl},  # Shift + Ctrl
     # {keyboard.Key.cmd, keyboard.Key.space},  # Super + Space
-    {keyboard.KeyCode(65509)},  # CapsLock
+    # {keyboard.KeyCode(65509)},  # CapsLock
 ]
 
 # How many layouts do you have?
